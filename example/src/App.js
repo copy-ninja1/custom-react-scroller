@@ -59,27 +59,13 @@ const App = () => {
   return <Container>
     <ScrollerContainer>
       <Scroller>
-        <Buttons><ButtonContent>button 1</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 2</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 3</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 4</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 5</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 6</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 7</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 8</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 9</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 10</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 11</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 12</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 13</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 14</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 15</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 16</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 17</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 18</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 19</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 20</ButtonContent></Buttons>
-
+        {[...Array(20).keys()].map((val, indx) => {
+          return (
+            <Buttons key={indx}>
+              <ButtonContent>button {indx + 1}</ButtonContent>
+            </Buttons>
+          )
+        })}
       </Scroller>
     </ScrollerContainer>
     <CodeContainer>
@@ -141,32 +127,19 @@ const App = () => {
   return <Container>
     <ScrollerContainer>
       <Scroller>
-
-        <Buttons><ButtonContent>button 1</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 2</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 3</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 4</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 5</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 6</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 7</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 8</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 9</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 10</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 11</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 12</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 13</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 14</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 15</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 16</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 17</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 18</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 19</ButtonContent></Buttons>
-        <Buttons><ButtonContent>button 20</ButtonContent></Buttons>
-
+      {[...Array(20).keys()].map((val, indx) => {
+        return (
+          <Buttons key={indx}>
+            <ButtonContent>button {indx + 1}</ButtonContent>
+          </Buttons>
+        )
+      })}
       </Scroller>
     </ScrollerContainer>
   </Container>
 }
+
+export default App
 
 `;
 
