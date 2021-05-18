@@ -1,0 +1,60 @@
+.container {
+    max-width: 1000px;
+    padding: 10px;
+    background-color: #f3f3f3;
+    margin: 10px auto;
+    width: 90vw;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 50vw;
+    }
+}
+
+.codeContainer {
+    overflow: auto;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+}
+
+.scrollerContainer {
+    background-color: white;
+    padding: 8px 4px;
+    border-radius: 16px;
+    border: 1px solid #e4e4e4cc;
+}
+
+.buttons {
+    padding: 0 12px;
+    background: #e0e0e0;
+    margin: 4px 8px 4px 0;
+    border-radius: 16px;
+    font-size: 14px;
+    height: 32px;
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    line-height: 20px;
+    max-width: 100%;
+    outline: none;
+    overflow: hidden;
+    padding: 0 12px;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.buttonContent {
+    align-items: center;
+    display: inline-flex;
+    height: 100%;
+    max-width: 100%;
+}
+
+/* custom-react-scroller
+const Buttons=styled.div` 
+` */
