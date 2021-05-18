@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect, useLayoutEffect } from 'react'
 import { ReactComponent as Prev } from './assets/prev.svg'
 import { ReactComponent as Next } from './assets/next.svg'
-import style from './assets/style.css'
+import style from './style.css'
 function Slider(props) {
   const contentRef = useRef()
   const wrapperRef = useRef()
