@@ -1,13 +1,13 @@
 import React, { useState, useRef, useEffect, useLayoutEffect } from 'react'
 import { ReactComponent as Prev } from './assets/prev.svg'
 import { ReactComponent as Next } from './assets/next.svg'
-import GroupBtn from './style'
+import style from './assets/style.css'
 function Slider(props) {
   const contentRef = useRef()
   const wrapperRef = useRef()
 
   const [position, setPosition] = useState(0)
-  const [backBtn, setBackBtn] = useState(false)
+  // const [backBtn, setBackBtn] = useState(false)
 
   const wrapperWidth = useDimension(wrapperRef)
 
@@ -29,8 +29,8 @@ function Slider(props) {
   }
 
   return (
-    <GroupBtn position={position}>
-      <div className='prev'>
+    <div className={style.slider} position={position}>
+      <div className={style.prev}>
         <span
           onClick={() => {
             moveBack(100)
@@ -39,12 +39,16 @@ function Slider(props) {
           <Prev />
         </span>
       </div>
-      <div className='wrapper' ref={wrapperRef}>
-        <div className='content' ref={contentRef}>
+      <div className={style.wrapper} ref={wrapperRef}>
+        <div
+          className={style.content}
+          style={{ transform: `translateX(${position}px)` }}
+          ref={contentRef}
+        >
           {props.children}
         </div>
       </div>
-      <div className='next'>
+      <div className={style.next}>
         <span
           onClick={() => {
             moveForward(100)
@@ -53,7 +57,7 @@ function Slider(props) {
           <Next />
         </span>
       </div>
-    </GroupBtn>
+    </div>
   )
 }
 

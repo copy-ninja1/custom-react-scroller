@@ -1,8 +1,8 @@
 {
   "name": "custom-react-scroller",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A react scroller component",
-  "author": "emmanuel uchewa (copy-ninja1)",
+  "author": "emmanuel uchewa",
   "license": "MIT",
   "repository": "copy-ninja1/custom-react-scroller",
   "main": "dist/index.js",
@@ -45,9 +45,7 @@
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "styled-components": "^5.3.0"
-  },
+  "dependencies": {},
   "keywords": [
     "react",
     "scroller",

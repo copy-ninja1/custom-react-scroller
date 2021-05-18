@@ -12,26 +12,70 @@ npm install --save custom-react-scroller
 
 ```jsx
 import React from 'react'
-import styled from 'styled-components'
 import Scroller from 'custom-react-scroller'
+import 'custom-react-scroller/dist/index.css'
+import './example.style.css'
 
-const Container = styled.div`
+const App = () => {
+  return (
+    <div className='container'>
+      <div className='scrollerContainer'>
+        <Scroller>
+          {[...Array(20).keys()].map((val, indx) => {
+            return (
+              <div className='buttons' key={indx}>
+                <span className='buttonContent'>button {indx + 1}</span>
+              </div>
+            )
+          })}
+        </Scroller>
+      </div>
+      <div className='codeContainer'>
+        <SyntaxHighlighter language='javascript' style={dark} wrapLines={true}>
+          {codeString}
+        </SyntaxHighlighter>
+      </div>
+    </div>
+  )
+}
+
+export default App
+```
+
+### example.style.css
+
+```css
+.container {
   max-width: 1000px;
   padding: 10px;
   background-color: #f3f3f3;
-  margin: auto;
-  height: 50vh;
-  width: 50vw;
+  margin: 10px auto;
+  width: 90vw;
   padding: 10px;
   padding-top: 30px;
-`
-const ScrollerContainer = styled.div`
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 50vw;
+  }
+}
+
+.codeContainer {
+  overflow: auto;
+  text-align: left;
+  height: 100%;
+  width: 100%;
+}
+
+.scrollerContainer {
   background-color: white;
   padding: 8px 4px;
   border-radius: 16px;
   border: 1px solid #e4e4e4cc;
-`
-const Buttons = styled.div`
+}
+
+.buttons {
   padding: 0 12px;
   background: #e0e0e0;
   margin: 4px 8px 4px 0;
@@ -49,32 +93,14 @@ const Buttons = styled.div`
   white-space: nowrap;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
-`
-const ButtonContent = styled.div`
+}
+
+.buttonContent {
   align-items: center;
   display: inline-flex;
   height: 100%;
   max-width: 100%;
-`
-const App = () => {
-  return (
-    <Container>
-      <ScrollerContainer>
-        <Scroller>
-          {[...Array(20).keys()].map((val, indx) => {
-            return (
-              <Buttons key={indx}>
-                <ButtonContent>button {indx + 1}</ButtonContent>
-              </Buttons>
-            )
-          })}
-        </Scroller>
-      </ScrollerContainer>
-    </Container>
-  )
 }
-
-export default App
 ```
 
 Made with :heart:
