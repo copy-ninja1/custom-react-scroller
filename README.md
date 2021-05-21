@@ -12,6 +12,11 @@ npm install --save custom-react-scroller
 
 ![alt text](https://github.com/copy-ninja1/custom-react-scroller/blob/main/example/public/custom-react-scroller.png?raw=true)
 
+## Props
+
+- `rightIcon`: Render the right icon component as you wish. (optional)
+- `leftIcon`: Render the left icon component as you wish. (optional)
+
 ## Usage
 
 ```jsx

@@ -36,7 +36,7 @@ function Slider(props) {
             moveBack(100)
           }}
         >
-          <Prev />
+          {props.leftIcon ? propsleftIcon : <Prev />}
         </span>
       </div>
       <div className={style.wrapper} ref={wrapperRef}>
@@ -54,7 +54,7 @@ function Slider(props) {
             moveForward(100)
           }}
         >
-          <Next />
+          {props.rightIcon ? props.rightIcon : <Next />}
         </span>
       </div>
     </div>
