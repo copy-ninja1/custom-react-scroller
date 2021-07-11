@@ -16,7 +16,8 @@
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepare": "run-s build",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
     "react": "^16.0.0"
