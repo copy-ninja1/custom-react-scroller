@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
     "build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
-    "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
+    "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "custom-react-scroller": "file:..",
