@@ -17,7 +17,7 @@
     "prepare": "run-s build",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\""
   },
   "peerDependencies": {
     "react": "^16.0.0"
