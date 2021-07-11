@@ -19,11 +19,6 @@ const App = () => {
         })}
       </Scroller>
     </div>
-    <div className="codeContainer">
-      <SyntaxHighlighter language="javascript" style={dark} wrapLines={true}>
-        {codeString}
-      </SyntaxHighlighter>
-    </div>
   </div>
 }
 const codeString = `
