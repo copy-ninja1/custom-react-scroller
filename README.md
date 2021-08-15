@@ -10,7 +10,11 @@ npm install --save custom-react-scroller
 
 ## Screenshot Example
 
-![alt text](https://github.com/copy-ninja1/custom-react-scroller/blob/main/example/public/custom-react-scroller.png?raw=true)
+![example Screenshot](https://github.com/copy-ninja1/custom-react-scroller/blob/main/example/public/custom-react-scroller.png?raw=true)
+
+## Demo Example
+
+[Demo](https://codesandbox.io/s/currying-bush-6f38d?file=/src/App.js)
 
 ## Props
 
