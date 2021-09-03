@@ -15,14 +15,14 @@ function Slider(props) {
   const spacePaddingEnd = wrapperWidth / 1.2
 
   function moveForward(step) {
-    let right = -position + step
+    const right = -position + step
     if (right + spacePaddingEnd < contentWidth) {
       setPosition(-right)
     }
   }
 
   function moveBack(step) {
-    let left = position + step
+    const left = position + step
     if (left + spacePaddingEnd < wrapperWidth) {
       setPosition(left)
     }
@@ -36,7 +36,7 @@ function Slider(props) {
             moveBack(100)
           }}
         >
-          {props.leftIcon ? propsleftIcon : <Prev />}
+          {props.leftIcon ? props.leftIcon : <Prev />}
         </span>
       </div>
       <div className={style.wrapper} ref={wrapperRef}>
