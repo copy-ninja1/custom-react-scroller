@@ -21,7 +21,7 @@
     "test": "echo \"No test specified\""
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "microbundle-crl": "^0.13.10",
@@ -40,8 +40,8 @@
     "gh-pages": "^2.2.0",
     "npm-run-all": "^4.1.5",
     "prettier": "2.7.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-scripts": "5.0.1"
   },
   "files": [
